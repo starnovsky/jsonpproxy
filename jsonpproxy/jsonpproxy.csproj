@@ -53,6 +53,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="client.html" />
     <Content Include="proxy.svc" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

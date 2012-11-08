@@ -2,3 +2,7 @@ C:\Source\test one-offs\jsonpproxy\jsonpproxy\bin\jsonpproxy.dll
 C:\Source\test one-offs\jsonpproxy\jsonpproxy\bin\jsonpproxy.pdb
 C:\Source\test one-offs\jsonpproxy\jsonpproxy\obj\Debug\jsonpproxy.dll
 C:\Source\test one-offs\jsonpproxy\jsonpproxy\obj\Debug\jsonpproxy.pdb
+C:\Users\stanislav.tarnovsky\Documents\GitHub\jsonpproxy\jsonpproxy\bin\jsonpproxy.dll
+C:\Users\stanislav.tarnovsky\Documents\GitHub\jsonpproxy\jsonpproxy\bin\jsonpproxy.pdb
+C:\Users\stanislav.tarnovsky\Documents\GitHub\jsonpproxy\jsonpproxy\obj\Debug\jsonpproxy.dll
+C:\Users\stanislav.tarnovsky\Documents\GitHub\jsonpproxy\jsonpproxy\obj\Debug\jsonpproxy.pdb
