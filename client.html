@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JSONP proxy test</title>
+
+    <script src="http://code.jquery.com/jquery-latest.js"  type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        var g_servicePath = "http://localhost/jsonpproxy/proxy.svc/";
+
+        function sayHello() {
+            $.getJSON(g_servicePath + 'Hello?callback=?', null, function (data) {
+                alert('Received: ' + data);
+            });
+        }
+
+        $(document).ready(function () {
+            $("#btnGo").click(function (e) {
+                var url = $("#txtUrl").val();
+                grabHtml(url);
+                e.preventDefault();
+            });
+
+            $("#btnSayHello").click(function (e) {
+                sayHello();
+                e.preventDefault();
+            });
+
+        });
+
+        function grabHtml(url) {
+            $.getJSON(g_servicePath + 'GrabHtml?url=' + encodeURIComponent(url) + '&callback=?', null, function (data) {
+                $("#container").append(data);
+            });
+        }
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="txtUrl">Url: </label><input id="txtUrl" type="text" style="width:300px" value="https://www.google.com/intl/en/about/" />
+            <input type="button" value="Grab it" id="btnGo" />
+            <input type="button" value="Say hello" id="btnSayHello" />
+        </fieldset>
+    </form>
+    <div id="container"></div>
+</body>
+</html>
+
+
